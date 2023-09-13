@@ -1,6 +1,6 @@
 # FullStackOpen 2023
 
-Solutions to exercises in FullStackOpen 2022
+Solutions to exercises in FullStackOpen 2023
 
 ## Curriculum
 
