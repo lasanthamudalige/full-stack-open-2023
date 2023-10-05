@@ -3,8 +3,8 @@ const Votes = (props) => {
     const itemIndex = props.selected
 
     return (
+        // If vote == 1 render "vote" else render "votes" 
         <>
-            {/* If vote == 1 render "vote" else render "votes" */}
             <p>Has {points[itemIndex]} {points[itemIndex] === 1 ? <>vote</> : <>votes</>}</p>
         </>
     )
