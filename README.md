@@ -1,4 +1,4 @@
-# FullStackOpen 2023
+# Full Stack Open 2023
 
 Solutions to exercises in FullStackOpen 2023
 
