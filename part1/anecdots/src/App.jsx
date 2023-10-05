@@ -19,6 +19,7 @@ const App = () => {
   const [points, updatePoints] = useState(Array(anecdotes.length).fill(0))
   const [highestVotedAnecdoteIndex, updateHighestVoteIndex] = useState(0)
 
+  // Get a random number between 0 and the length of the array
   const getRandomInt = () => {
     return Math.floor(Math.random() * anecdotes.length);
   }
@@ -32,6 +33,7 @@ const App = () => {
     updateHighestVoteIndex(copy.indexOf(max))
   }
 
+  // Function to get the next anecdote
   const nextAnecdotes = () => { setSelected(getRandomInt()) }
 
   return (
@@ -44,6 +46,7 @@ const App = () => {
         <Button name='next anecdotes' handleClick={nextAnecdotes} />
       </div>
       <h1>Anecdote with most votes</h1>
+      {/* If there aren't any votes in the array show nothing. else show the one with the highest vote */}
       {points[highestVotedAnecdoteIndex] < 1 ? <></> : anecdotes[highestVotedAnecdoteIndex]}
       <Votes points={points} selected={highestVotedAnecdoteIndex} />
     </div>
