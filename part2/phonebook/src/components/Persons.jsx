@@ -7,7 +7,7 @@ const Persons = (props) => {
 
     // If the filter status is true assign the filtered list to personsList or persons 
     if (filter) {
-        personsList = persons.filter((person) => person.name.toLowerCase().includes(searchKeyword.toLowerCase()));
+        personsList = persons.filter(person => person.name.toLowerCase().includes(searchKeyword.toLowerCase()));
     } else {
         personsList = persons
     }

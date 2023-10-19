@@ -4,7 +4,7 @@ const PersonForm = (props) => {
     const { persons, setPersons } = props
 
     // new person useState
-    const [newPerson, setNewPerson] = useState({ name: '', number: '', id: persons.length + 1 })
+    const [newPerson, setNewPerson] = useState({ name: '', number: '', id: 5 }) // set the id of the first input contact as '5'
 
     // Separate functions to update the new person object according to the input
     const handleNameChange = (event) => {
@@ -23,7 +23,7 @@ const PersonForm = (props) => {
         const foundPerson = persons.filter(person => person.name === newPerson.name)
         // If the name is in the persons array (found person will not return an empty array)
         if (foundPerson.length !== 0) {
-            alert(`${foundPerson[0].name} is already added to phonebook`) // show an alert
+            alert(`${foundPerson[0].name} is already added to PhoneBook`) // show an alert
         } else {
             // create a new array called newPersons and add previous array and the new person object
             const newPersons = [...persons, newPerson]
