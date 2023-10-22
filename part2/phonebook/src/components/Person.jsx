@@ -1,8 +1,9 @@
 const Person = (props) => {
-    const { name, number } = props
+    const { id, name, number, deletePerson } = props
 
     return (
-        <p>{name} {number}</p>
+        // pass the id to the prop as key (for mapping) and call delete function and pass id to it when the the user click delete button 
+        <p key={id}>{name} {number} <button onClick={() => deletePerson(id)}>delete</button></p>
     )
 }
 

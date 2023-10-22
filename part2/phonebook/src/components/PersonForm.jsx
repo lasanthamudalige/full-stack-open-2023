@@ -1,10 +1,11 @@
 import { useState } from 'react'
+import contactService from '../services/contacts'
 
 const PersonForm = (props) => {
     const { persons, setPersons } = props
 
     // new person useState
-    const [newPerson, setNewPerson] = useState({ name: '', number: '', id: 5 }) // set the id of the first input contact as '5'
+    const [newPerson, setNewPerson] = useState({ name: '', number: '' }) // set the id of the first input contact as '5'
 
     // Separate functions to update the new person object according to the input
     const handleNameChange = (event) => {
@@ -15,6 +16,11 @@ const PersonForm = (props) => {
         setNewPerson({ ...newPerson, number: event.target.value })
     }
 
+    // clear newPerson object
+    const clearNewPerson = () => {
+        setNewPerson({ name: '', number: '' })
+    }
+
     // submit function
     const addPerson = (event) => {
         // Stop page from reloading
@@ -23,14 +29,35 @@ const PersonForm = (props) => {
         const foundPerson = persons.filter(person => person.name === newPerson.name)
         // If the name is in the persons array (found person will not return an empty array)
         if (foundPerson.length !== 0) {
-            alert(`${foundPerson[0].name} is already added to PhoneBook`) // show an alert
+            // console.log(foundPerson);
+            const person = foundPerson[0]
+            // show an confirmation window
+            if (window.confirm(`${person.name} is already added to phoneBook, replace the old number with a new one?`)) {
+                contactService
+                    .update(person.id, newPerson)
+                    .then(returnedPerson => {
+                        // create a new list with map function and if the name is in the array, return the new person with the new number 
+                        const newPersons = persons.map((person) => person.name !== newPerson.name ? person : returnedPerson)
+                        setPersons(newPersons)
+                        clearNewPerson()
+                        // console.log(`Successfully updated ${returnedPerson.name}`);
+                    })
+            }
         } else {
-            // create a new array called newPersons and add previous array and the new person object
-            const newPersons = [...persons, newPerson]
-            setPersons(newPersons)
-            setNewPerson({ name: '', number: '', id: newPersons.length + 1 }) // clear newPerson object and update the id
+            // add a new id to the contact using persons array length
+            setNewPerson({ ...newPerson, id: persons.length + 1 })
+            contactService
+                .create(newPerson)
+                .then(returnedPerson => {
+                    // create a new array called newPersons and add pervious persons array and the new person object from response
+                    const newPersons = [...persons, returnedPerson]
+                    setPersons(newPersons)
+                    clearNewPerson() // clear newPerson object and update the id
+                    // console.log(`Successfully added ${returnedPerson.name}`);
+                })
         }
     }
+
 
     return (
         <>
