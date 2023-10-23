@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import contactService from '../services/contacts'
 
-const PersonForm = (props) => {
-    const { persons, setPersons } = props
+const PersonForm = ({ persons, setPersons, setNotification }) => {
 
     // new person useState
     const [newPerson, setNewPerson] = useState({ name: '', number: '' }) // set the id of the first input contact as '5'
@@ -41,6 +40,7 @@ const PersonForm = (props) => {
                         setPersons(newPersons)
                         clearNewPerson()
                         // console.log(`Successfully updated ${returnedPerson.name}`);
+                        setNotification({ type: 'success', message: `updated ${returnedPerson.name}` })
                     })
             }
         } else {
@@ -54,6 +54,7 @@ const PersonForm = (props) => {
                     setPersons(newPersons)
                     clearNewPerson() // clear newPerson object and update the id
                     // console.log(`Successfully added ${returnedPerson.name}`);
+                    setNotification({ type: 'success', message: `Added ${returnedPerson.name}` })
                 })
         }
     }
