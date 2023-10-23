@@ -12,6 +12,7 @@ const App = () => {
   const [notification, setNotification] = useState({ type: '', message: '' })
 
   useEffect(() => {
+    // initial render on start
     contactService
       .getAll()
       .then(initialContacts => {
@@ -21,8 +22,6 @@ const App = () => {
     // monitor changes to search keyword using useEffect and update filter status
     if (searchKeyword) {
       setFilterStatus(true)
-    } else {
-      setFilterStatus(false)
     }
   }, [searchKeyword])
 
