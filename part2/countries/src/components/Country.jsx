@@ -1,9 +1,31 @@
+import axios from "axios"
+import { useEffect, useState } from "react"
+
 const Country = ({ countryObject }) => {
     const name = countryObject.name.common
     const capital = countryObject.capital
     const area = countryObject.area
     const languages = countryObject.languages
     const flagURL = countryObject.flags.png
+
+    // get longitude and latitude for the capital of the country
+    const [long, lat] = countryObject.latlng
+
+    // import api key for the openweather api
+    const weatherApiKey = import.meta.env.VITE_WEATHER_API_KEY
+
+    const [weatherData, setWeatherData] = useState({ temperature: null, windSpeed: null, weatherIcon: '' })
+
+    axios
+        .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${weatherApiKey}`)
+        .then(response => {
+            const responseData = response.data
+            setWeatherData({
+                temperature: responseData.main.temp,
+                windSpeed: responseData.wind.speed,
+                weatherIcon: responseData.weather[0].icon
+            })
+        })
 
     return (
         <>
@@ -14,9 +36,15 @@ const Country = ({ countryObject }) => {
             </p>
             <h3>languages:</h3>
             <ul>
+                {/* show languages related to the countries by mapping it as a list from the languages object */}
                 {Object.keys(languages).map((key, value) => <li key={key}>{languages[key]}</li>)}
             </ul>
-            <img src={flagURL} />
+            <img width={175} src={flagURL} />
+            <h2>Weather in {name}</h2>
+            <p>Temperature {weatherData.temperature} Celsius</p>
+            {/* Get icon for the related weather condition */}
+            <img src={`https://openweathermap.org/img/wn/${weatherData.weatherIcon}@2x.png`}></img>
+            <p>Wind {weatherData.windSpeed} m/s</p>
         </>
     )
 }
