@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Country from "./Country";
 
 const Countries = ({ searchName, countryList }) => {
@@ -6,20 +7,16 @@ const Countries = ({ searchName, countryList }) => {
 
     const getCountryData = (countryName) => {
         const countryDataList = countryList.filter(country => country.name.common === countryName)
-        const country = countryDataList[0]
-        return country
+        const countryData = countryDataList[0]
+        return countryData
     }
 
-    /* yet to fix to show a country on show country button press */
-    // const viewCountry = (countryName) => {
-    //     const countryObject = getCountryData(countryName)
+    // country variable to view when user press the show button
+    const [selectedCountry, setSelectedCountry] = useState('')
 
-    //     return (
-    //         <>
-    //             <Country countryObject={countryObject} />
-    //         </>
-    //     )
-    // }
+    const viewCountry = (countryName) => {
+        setSelectedCountry(countryName)
+    }
 
     // if the search name is empty
     if (!searchName) {
@@ -30,7 +27,14 @@ const Countries = ({ searchName, countryList }) => {
     } else if (searchName && filteredCountryNames.length <= 10 && filteredCountryNames.length > 1) {
         return (
             <>
-                {filteredCountryNames.map(countryName => <li key={filteredCountryNames.indexOf(countryName)}>{countryName} <button >show</button></li >)
+                {
+                    filteredCountryNames.map((countryName, index) =>
+                        <li key={index}>
+                            {countryName}
+                            <button onClick={() => viewCountry(countryName)}>show</button>
+                            {/* if the country name matches the current country name, show the country view, else don't */}
+                            {selectedCountry === countryName ? <Country countryObject={getCountryData(countryName)} /> : ''}
+                        </li >)
                 }
             </>
         )

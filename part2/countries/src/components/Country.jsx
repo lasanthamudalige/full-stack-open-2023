@@ -9,23 +9,29 @@ const Country = ({ countryObject }) => {
     const flagURL = countryObject.flags.png
 
     // get longitude and latitude for the capital of the country
-    const [long, lat] = countryObject.latlng
+    const [lat, long] = countryObject.latlng
+    console.log(countryObject);
 
     // import api key for the openweather api
     const weatherApiKey = import.meta.env.VITE_WEATHER_API_KEY
 
-    const [weatherData, setWeatherData] = useState({ temperature: null, windSpeed: null, weatherIcon: '' })
+    const [weatherData, setWeatherData] = useState({ temperature: NaN, windSpeed: NaN, weatherIcon: '' })
 
-    axios
-        .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${weatherApiKey}`)
-        .then(response => {
-            const responseData = response.data
-            setWeatherData({
-                temperature: responseData.main.temp,
-                windSpeed: responseData.wind.speed,
-                weatherIcon: responseData.weather[0].icon
+    useEffect(() => {
+        axios
+            .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${weatherApiKey}`)
+            .then(response => {
+                const responseData = response.data
+                setWeatherData({
+                    temperature: responseData.main.temp,
+                    windSpeed: responseData.wind.speed,
+                    weatherIcon: responseData.weather[0].icon
+                })
             })
-        })
+            .catch(error => {
+                console.log(error.response.data);
+            })
+    }, [])
 
     return (
         <>
