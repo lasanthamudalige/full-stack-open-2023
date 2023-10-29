@@ -1,6 +1,6 @@
 # Full Stack Open 2023
 
-Solutions to exercises in FullStackOpen 2023
+Solutions to exercises in Full Stack open course from the university of Helsinki 
 
 ## Curriculum
 
