@@ -7,11 +7,12 @@ const Countries = ({ searchName, countryList }) => {
 
     const getCountryData = (countryName) => {
         const countryDataList = countryList.filter(country => country.name.common === countryName)
+        // Get the country list with the matching name add get the first item of the list
         const countryData = countryDataList[0]
         return countryData
     }
 
-    // country variable to view when user press the show button
+    // set country variable to view when user press the show button
     const [selectedCountry, setSelectedCountry] = useState('')
 
     const viewCountry = (countryName) => {
