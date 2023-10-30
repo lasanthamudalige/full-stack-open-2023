@@ -1,5 +1,3 @@
-import { useEffect } from "react"
-
 const Filter = ({ searchKeyword, setSearchKeyword }) => {
     // update searchKeyword useState using this function
     const handleSearchKeywordChange = (event) => {

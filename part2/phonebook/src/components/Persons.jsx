@@ -1,6 +1,5 @@
-import { useState } from "react"
-import Person from "./Person"
-import contactService from "../services/contacts"
+import Person from './Person'
+import contactService from '../services/contacts'
 
 const Persons = ({ persons, filter, searchKeyword, setPersons, setNotification }) => {
     let newPersonsList = persons
