@@ -1,4 +1,4 @@
-import StatisticLine from "./StatisticLine"
+import StatisticLine from './StatisticLine'
 
 const Statistics = (props) => {
     const { good, neutral, bad } = props

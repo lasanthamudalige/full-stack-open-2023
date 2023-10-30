@@ -1,6 +1,6 @@
-import Content from "./Content"
-import Header from "./Header"
-import Total from "./Total"
+import Content from './Content'
+import Header from './Header'
+import Total from './Total'
 
 const App = () => {
   const course = {
