@@ -1,7 +1,18 @@
 const express = require('express')
+const morgan = require('morgan')
 const app = express()
 
 app.use(express.json())
+
+// get the sent data as a json assign it to a variable called 'body'
+morgan.token('body', (request, response,) => {
+    return JSON.stringify(request.body)
+})
+
+// log it in a custom format using morgan
+app.use(morgan(
+    ':method :url :status :res[content-length] - :response-time ms :body'
+))
 
 let persons = [
     {
@@ -82,7 +93,7 @@ const generateId = () => {
 app.post('/api/persons', (request, response) => {
     // get the json data from the request
     const body = request.body
-    console.log(body);
+
     // if the name or the number is empty return 404 status code with the error
     if (!body.name || !body.number) {
         return response.status(404).json({
