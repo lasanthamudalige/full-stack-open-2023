@@ -14,7 +14,7 @@ This project is part of the Full Stack Open 2023 course, specifically the exerci
 
 ## Overview
 
-The courseinfo project is a minimal React application that lists the modules of a course along with the number of exercises for each module. 
+The **courseinfo** project is a minimal React application that lists the modules of a course along with the number of exercises for each module. 
 
 Key objectives of this project are:
 
