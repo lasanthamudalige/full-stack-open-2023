@@ -37,7 +37,7 @@ Ensure that you have these installed before proceeding.
 
    2. Navigate to the project directory:
    ```bash
-   cd full-stack-open-2023/part1/unicafe
+   cd full-stack-open-2023/part1/countries
    ```
 
    3. Install dependencies:
