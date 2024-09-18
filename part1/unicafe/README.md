@@ -80,8 +80,3 @@ Ensure that you have these installed before proceeding.
 ## License
 
 This project is licensed under the MIT License. For more details, refer to the [LICENSE](https://github.com/lasanthamudalige/full-stack-open-2023/blob/main/LICENSE) file.
-
-<!-- This is to add horizontal line -->
----
-
-This project is a hands-on exercise in managing state and handling user input in React. It's an excellent introduction to building interactive user interfaces with React.
