@@ -99,6 +99,7 @@ anecdots/
 
 This project is licensed under the MIT License. For more details, refer to the [LICENSE](https://github.com/lasanthamudalige/full-stack-open-2023/blob/main/LICENSE) file.
 
---- <!-- This is to add horizontal line -->
+<!-- This is to add horizontal line -->
+---
 
 The anecdotes project is a simple and interactive way to understand core React concepts like state, props, and event handling. It's part of the foundational exercises in the Full Stack Open 2023 curriculum.
