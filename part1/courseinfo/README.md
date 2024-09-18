@@ -8,9 +8,8 @@ This project is part of the Full Stack Open 2023 course, specifically the exerci
    2. [Prerequisites](#prerequisites)
    3. [Installation](#installation)
    4. [Usage](#usage)
-   5. [Project Structure](#project-structure)
-   6. [Key Concepts](#key-concepts)
-   7. [License](#license)
+   5. [Key Concepts](#key-concepts)
+   6. [License](#license)
 
 ## Overview
 
@@ -69,25 +68,6 @@ Ensure that you have these installed before proceeding.
    ```
 
 2. Open your browser and navigate to http://localhost:3000 to view the app.
-
-## Project Structure
-
-The structure of the project is as follows:
-
-```bash
-courseinfo/
-│
-├── public/                 # Static files
-├── src/                    # Source files
-│   ├── App.js              # Main application component
-│   ├── index.js            # Entry point for the app
-│   └── components/         # Folder for React components
-│       ├── Header.js       # Component for rendering course header
-│       ├── Content.js      # Component for rendering course content
-│       └── Total.js        # Component for rendering total exercises
-├── package.json            # Project dependencies and scripts
-└── README.md               # Project documentation
-```
 
 ## Key Concepts
 
