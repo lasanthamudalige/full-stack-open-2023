@@ -61,7 +61,7 @@ Ensure that you have these installed before proceeding.
     Start the development server:
 
     ```bash
-   npm start
+   npm start # or 'npm i'
    ```
 
    Or if using yarn:
@@ -89,11 +89,11 @@ anecdots/
 
 ## Key Concepts
 
-   * State Management: The app uses React's useState hook to manage the votes and the currently displayed anecdote.
+   * **State Management:** The app uses React's useState hook to manage the votes and the currently displayed anecdote.
 
-   * Event Handling: Button click events are handled to increment the vote count and to change the displayed anecdote.
+   * **Event Handling:** Button click events are handled to increment the vote count and to change the displayed anecdote.
 
-   * Conditional Rendering: The app displays a message when there are no votes yet and dynamically updates the anecdote with the most votes.
+   * **Conditional Rendering:** The app displays a message when there are no votes yet and dynamically updates the anecdote with the most votes.
 
 ## License
 
