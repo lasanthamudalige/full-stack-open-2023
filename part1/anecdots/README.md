@@ -17,7 +17,7 @@ Table of Contents
 
 The **anecdotes** project allows users to vote for their favorite anecdotes. Each time the app is loaded, it shows a random anecdote, and users can click a button to vote for it. The votes are stored in the app's state, and the anecdote with the highest number of votes is displayed separately.
 
-Key objectives of this project are:
+The key objectives of this project are:
 
    * Managing component state using React's useState hook.
    * Updating and displaying state information dynamically.
