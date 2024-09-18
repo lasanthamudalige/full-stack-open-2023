@@ -97,7 +97,7 @@ anecdots/
 
 ## License
 
-This project is licensed under the MIT License. For more details, refer to the [LICENSE]() file.
+This project is licensed under the MIT License. For more details, refer to the [LICENSE](https://github.com/lasanthamudalige/full-stack-open-2023/blob/main/LICENSE) file.
 
 --- <!-- This is to add horizontal line -->
 
