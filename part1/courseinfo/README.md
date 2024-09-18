@@ -80,8 +80,3 @@ Ensure that you have these installed before proceeding.
 ## License
 
 This project is licensed under the MIT License. For more details, refer to the [LICENSE](https://github.com/lasanthamudalige/full-stack-open-2023/blob/main/LICENSE) file.
-
-<!-- This is to add horizontal line -->
----
-
-This project is a foundational exercise in React and aims to reinforce key concepts related to component-based design. It’s a great starting point for anyone looking to dive into React.
