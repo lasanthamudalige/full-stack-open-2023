@@ -13,13 +13,7 @@ The Countries project is part of the Full Stack Open 2023 course, specifically f
 
 ## About the Project
 
-The Countries App demonstrates how to fetch data from external APIs and use React to render the data dynamically. The user can search for a country and view details such as:
-
-   * Country name
-   * Capital city
-   * Area of the country 
-   * Spoken languages
-   * Current weather in the capital
+The Countries App demonstrates how to fetch data from external APIs and use React to render the data dynamically.
 
 The application integrates with the REST Countries API and OpenWeatherMap API to retrieve country and weather information.
 
@@ -28,6 +22,14 @@ The application integrates with the REST Countries API and OpenWeatherMap API to
    * Search for countries by name.
    * Display detailed information about selected countries.
    * Fetch and display real-time weather data for the capital city of the selected country.
+
+### Key Concepts:
+
+   * Country name
+   * Capital city
+   * Area of the country 
+   * Spoken languages
+   * Current weather in the capital
 
 ## Prerequisites
 
