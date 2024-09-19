@@ -27,7 +27,7 @@ The **Courseinfo App** is built using **React** and provides a simple user inter
 
 ## Prerequisites
 
-   * Node.js (version 14 or higher)
+   * Node.js (version 18 or higher)
 
 Ensure that you have these installed before proceeding.
 
