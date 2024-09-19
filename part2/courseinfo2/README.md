@@ -1,30 +1,34 @@
-# Courseinfo2 - Full Stack Open 2023
+# Courseinfo2 (Part 2 - Full Stack Open 2023)
 
-The Courseinfo2 project is part of the Full Stack Open 2023 course, specifically from Part 2. This project builds on the concepts introduced in Part 1 by adding more advanced features and practices in React, such as handling forms and managing state in a more complex scenario.
+This project is a part of the **Full Stack Open 2023** course and is the continuation of the "Courseinfo" project from Part 1. The application is built using **React** and is used to display information about courses, including the course name, number of exercises, and the total number of exercises.
 
 ## Table of Contents
 
-   1. [Overview](#overview)
+   1. [About the Project](#about-the-project)
    2. [Prerequisites](#prerequisites)
    3. [Installation](#installation)
    4. [Usage](#usage)
-   5. [Key Concepts](#key-concepts)
-   6. [License](#license)
+   5. [License](#license)
 
-## Overview
+## About the Project
 
-The **countries** project is a React application designed to fetch and display information about countries based on user search input.
+This project is an exercise in using React components, state, and props. The focus is on learning how to:
 
-The key objectives of this project are:
+   * Build reusable components
+   * Manage component states and props
+   * Pass data from parent to child components
+   * Structure a React project
 
-  * Searching for countries by name.
-  * Displaying detailed information about selected countries.
-  * Handling asynchronous data fetching from a REST API.
+The application integrates with the REST Countries API and OpenWeatherMap API to retrieve country and weather information.
+
+### Main Features:
+
+   * Display a list of courses with the number of parts and exercises for each.
+   * Calculate and display the total number of exercises for all courses.
 
 ## Prerequisites
 
    * Node.js (version 14 or higher)
-   * npm or yarn package manager
 
 Ensure that you have these installed before proceeding.
 
@@ -51,20 +55,15 @@ Ensure that you have these installed before proceeding.
 
 1. To run the application locally:
 
-   Start the development server:
-   ```bash
-   npm start dev
-   ```
+      Start the development server:
+   
+      ```bash
+      npm start dev
+      ```
 
-1. Open your browser and navigate to http://localhost:3000 to view the app.
+2. Open your browser and navigate to http://localhost:3000 or replace 3000 with your port to view the app.
 
-## Key Concepts
-
-  * **Form Handling:** Implements forms to add or modify course information, with state management for form inputs.
-
-  * **State Management:** Manages a list of courses and their details using React’s state management features.
-
-  * **Dynamic Rendering:** Updates the UI dynamically based on user interactions, such as adding or updating course information.
+3. To check all available **srcipts** check the **[package.json](https://github.com/lasanthamudalige/full-stack-open-2023/blob/main/part2/countries/package.json)** file. 
 
 ## License
 
