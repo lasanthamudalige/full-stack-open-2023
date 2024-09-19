@@ -1,5 +1,5 @@
 const Votes = (props) => {
-    const points = props.points
+	const points = props.points
     const itemIndex = props.selected
 
     return (

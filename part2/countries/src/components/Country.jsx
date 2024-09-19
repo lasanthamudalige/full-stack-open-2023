@@ -2,7 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 
 const Country = ({ countryObject }) => {
-    const name = countryObject.name.common
+	const name = countryObject.name.common
     const capital = countryObject.capital
     const area = countryObject.area
     const languages = countryObject.languages

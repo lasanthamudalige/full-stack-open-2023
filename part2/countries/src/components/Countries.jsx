@@ -2,7 +2,7 @@ import { useState } from "react";
 import Country from "./Country";
 
 const Countries = ({ searchName, countryList }) => {
-    const countryNames = countryList.map(country => country.name.common)
+	const countryNames = countryList.map(country => country.name.common)
     const filteredCountryNames = countryNames.filter(countryName => countryName.toLowerCase().includes(searchName.toLowerCase()))
 
     const getCountryData = (countryName) => {

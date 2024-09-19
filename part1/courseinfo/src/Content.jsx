@@ -1,5 +1,5 @@
 const Content = (props) => {
-    const course = props.course
+	const course = props.course
     
     return (
         <>

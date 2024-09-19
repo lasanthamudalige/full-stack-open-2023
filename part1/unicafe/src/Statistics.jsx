@@ -1,7 +1,7 @@
 import StatisticLine from './StatisticLine'
 
 const Statistics = (props) => {
-    const { good, neutral, bad } = props
+	const { good, neutral, bad } = props
     const all = good + neutral + bad
     const average = (good - bad) / all
     const positivePercentage = (good * 100) / all
