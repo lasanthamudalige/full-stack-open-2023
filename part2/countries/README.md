@@ -59,15 +59,15 @@ Ensure that you have these installed before proceeding.
     Start the development server:
 
     ```bash
-   npm start
+   npm start dev
    ```
 
    Or if using yarn:
    ```bash
-    yarn start
+    yarn start dev
    ```
 
-2. Open your browser and navigate to http://localhost:3000 to view the app.
+2. Open your browser and navigate to http://localhost:3000 or replace 3000 with your port to view the app.
 
 ## Key Concepts
 
