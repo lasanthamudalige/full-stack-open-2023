@@ -14,14 +14,16 @@ This project is part of the **Full Stack Open 2023** course, specifically from P
 
 The **Courseinfo App** is built using **React** and provides a simple user interface to display course information. The project focuses on introducing key concepts such as:
 
-   * Structuring a React application with multiple components.
-   * Passing data between components using props.
-   * Utilizing array methods like map to dynamically generate UI elements.
-
 ### Main Features:
 
    * Display a list of courses with their respective parts and the number of exercises.
    * Calculate and display the total number of exercises for each course.
+
+### Key Concepts:
+
+   * Structuring a React application with multiple components.
+   * Passing data between components using props.
+   * Utilizing array methods like map to dynamically generate UI elements.
 
 ## Prerequisites
 
