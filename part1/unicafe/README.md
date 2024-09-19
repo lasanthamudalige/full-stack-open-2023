@@ -1,30 +1,32 @@
-# Courseinfo - Full Stack Open 2023
+# Unicafe App (Part 1 - Full Stack Open 2023)
 
-This project is part of the Full Stack Open 2023 course, specifically the exercise from Part 1. It is a simple React application designed to manage and display course information. The project is focused on understanding the basics of React, component-based architecture, and props handling.
+This project is part of the **Full Stack Open 2023** course, specifically from Part 1. The **Unicafe App** is a simple React application where users can give feedback on a cafe's service. It introduces state management and conditional rendering in React components.
 
 ## Table of Contents
 
-   1. [Overview](#overview)
+   1. [About the Project](#about-the-project)
    2. [Prerequisites](#prerequisites)
    3. [Installation](#installation)
    4. [Usage](#usage)
-   5. [Key Concepts](#key-concepts)
-   6. [License](#license)
+   5. [License](#license)
 
-## Overview
+## About the Project
 
-The **unicafe** project is a React application that allows users to give feedback on a café by rating it with various metrics (good, neutral, bad). It then displays the collected feedback and computes simple statistics based on the ratings. 
+The **Unicafe App** allows users to provide feedback as "Good", "Neutral", or "Bad", and displays the statistics of the feedback including the total number of votes, the average score, and the percentage of positive feedback. It demonstrates key concepts in React such as:
 
-The key objectives of this project are:
+   * Handling component state using React’s useState hook.
+   * Managing dynamic data updates and rendering based on state changes.
+   * Conditional rendering based on user interactions.
 
-   * Learning how to manage state in React components.
-   * Handling user inputs and events.
-   * Displaying dynamic content based on user interactions.
+### Main Features:
+
+   * Collect feedback from users in three categories: Good, Neutral, Bad.
+   * Display the total number of feedback entries.
+   * Calculate and display statistics like average feedback and percentage of positive feedback.
 
 ## Prerequisites
 
    * Node.js (version 14 or higher)
-   * npm or yarn package manager
 
 Ensure that you have these installed before proceeding.
 
@@ -42,40 +44,24 @@ Ensure that you have these installed before proceeding.
 
    3. Install dependencies:
 
-   If you are using npm:
-   ```bash
-   npm install # or 'npm i'
-   ```
-
-   Or, if you are using yarn:
-   ```bash
-   yarn install
-   ```
+      If you are using npm:
+      ```bash
+      npm install # or 'npm i'
+      ```
 
 ## Usage
 
 1. To run the application locally:
 
-    Start the development server:
+      Start the development server:
+   
+      ```bash
+      npm start dev
+      ```
 
-    ```bash
-   npm start
-   ```
+2. Open your browser and navigate to http://localhost:3000 or replace 3000 with your port to view the app.
 
-   Or if using yarn:
-   ```bash
-    yarn start
-   ```
-
-2. Open your browser and navigate to http://localhost:3000 to view the app.
-
-## Key Concepts
-
-  * **State Management:** The app utilizes React's **useState** hook to manage the state of feedback ratings and statistics.
-
-  * **Event Handling:** User interactions (such as button clicks) are managed using event handlers, which update the state accordingly.
-
-  * **Dynamic Rendering:** The application dynamically renders content based on the current state, allowing users to see updated statistics as they interact with the app.
+3. To check all available **srcipts** check the **package.json** file. 
 
 ## License
 
