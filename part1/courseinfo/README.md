@@ -12,7 +12,7 @@ This project is part of the **Full Stack Open 2023** course, specifically from P
 
 ## About the Project
 
-The **Courseinfo App** is built using **React** and provides a simple user interface to display course information. The project focuses on introducing key concepts such as:
+The **Courseinfo App** is built using **React** and provides a simple user interface to display course information.
 
 ### Main Features:
 
