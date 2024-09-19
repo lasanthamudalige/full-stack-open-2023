@@ -19,8 +19,6 @@ This project is an exercise in using React components, state, and props. The foc
    * Pass data from parent to child components
    * Structure a React project
 
-The application integrates with the REST Countries API and OpenWeatherMap API to retrieve country and weather information.
-
 ### Main Features:
 
    * Display a list of courses with the number of parts and exercises for each.
