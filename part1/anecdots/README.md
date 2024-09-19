@@ -1,31 +1,33 @@
-# Anecdotes - Full Stack Open 2023
+# Courseinfo2 (Part 2 - Full Stack Open 2023)
 
-This project is part of the Full Stack Open 2023 course, specifically from Part 1. It is a simple React application where users can vote on randomly displayed anecdotes. The project introduces React state management and event handling concepts.
-Table of Contents
+This project is a part of the **Full Stack Open 2023** course and is the continuation of the "Courseinfo" project from Part 1. The application is built using **React** and is used to display information about courses, including the course name, number of exercises, and the total number of exercises.
 
 ## Table of Contents
 
-   1. [Overview](#overview)
+   1. [About the Project](#about-the-project)
    2. [Prerequisites](#prerequisites)
    3. [Installation](#installation)
    4. [Usage](#usage)
-   5. [Key Concepts](#key-concepts)
-   6. [License](#license)
+   5. [License](#license)
 
-## Overview
+## About the Project
 
-The **anecdotes** project allows users to vote for their favorite anecdotes. Each time the app is loaded, it shows a random anecdote, and users can click a button to vote for it. The votes are stored in the app's state, and the anecdote with the highest number of votes is displayed separately.
+The Anecdotes App is a simple React app that allows users to view random anecdotes and vote for their favorites. It demonstrates key concepts in React such as:
 
-The key objectives of this project are:
+   * Handling component state with useState
+   * Event handling in React
+   * Passing props between components
+   * Conditional rendering
 
-   * Managing component state using React's useState hook.
-   * Updating and displaying state information dynamically.
-   * Handling events such as button clicks to modify the app's state.
+### Main Features:
+
+   * View random anecdotes.
+   * Vote for your favorite anecdote.
+   * Display the anecdote with the most votes.
 
 ## Prerequisites
 
    * Node.js (version 14 or higher)
-   * npm or yarn package manager
 
 Ensure that you have these installed before proceeding.
 
@@ -43,40 +45,24 @@ Ensure that you have these installed before proceeding.
 
    3. Install dependencies:
 
-   If you are using npm:
-   ```bash
-   npm install
-   ```
-
-   Or, if you are using yarn:
-   ```bash
-   yarn install
-   ```
+      If you are using npm:
+      ```bash
+      npm install # or 'npm i'
+      ```
 
 ## Usage
 
 1. To run the application locally:
 
-    Start the development server:
+      Start the development server:
+   
+      ```bash
+      npm start dev
+      ```
 
-    ```bash
-   npm start # or 'npm i'
-   ```
+2. Open your browser and navigate to http://localhost:3000 or replace 3000 with your port to view the app.
 
-   Or if using yarn:
-   ```bash
-    yarn start
-   ```
-
-2. Open your browser and navigate to http://localhost:3000 to view the app.
-
-## Key Concepts
-
-   * **State Management:** The app uses React's useState hook to manage the votes and the currently displayed anecdote.
-
-   * **Event Handling:** Button click events are handled to increment the vote count and to change the displayed anecdote.
-
-   * **Conditional Rendering:** The app displays a message when there are no votes yet and dynamically updates the anecdote with the most votes.
+3. To check all available **srcipts** check the **package.json** file. 
 
 ## License
 
