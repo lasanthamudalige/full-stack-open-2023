@@ -12,7 +12,7 @@ This project is part of the **Full Stack Open 2023** course, specifically from P
 
 ## About the Project
 
-The **Anecdotes App** is a simple React app that allows users to view random anecdotes and vote for their favorites. It demonstrates key concepts in React such as:
+The **Anecdotes App** is a simple **React** app that allows users to view random anecdotes and vote for their favorites. It demonstrates key concepts in React such as:
 
    * Handling component state with useState
    * Event handling in React
