@@ -39,7 +39,7 @@ Ensure that you have these installed before proceeding.
 
    2. Navigate to the project directory:
    ```bash
-   cd full-stack-open-2023/part1/courseinfo2
+   cd full-stack-open-2023/part2/courseinfo2
    ```
 
    3. Install dependencies:
