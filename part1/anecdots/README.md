@@ -29,7 +29,7 @@ The **Anecdotes App** is a simple **React** app that allows users to view random
 
 ## Prerequisites
 
-   * Node.js (version 14 or higher)
+   * Node.js (version 18 or higher)
 
 Ensure that you have these installed before proceeding.
 
