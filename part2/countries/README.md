@@ -33,7 +33,7 @@ The application integrates with the REST Countries API and OpenWeatherMap API to
 
 ## Prerequisites
 
-   * Node.js (version 14 or higher)
+   * Node.js (version 18 or higher)
 
 Ensure that you have these installed before proceeding.
 
