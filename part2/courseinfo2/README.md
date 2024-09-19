@@ -12,17 +12,19 @@ This project is a part of the **Full Stack Open 2023** course and is the continu
 
 ## About the Project
 
-This project is an exercise in using React components, state, and props. The focus is on learning how to:
-
-   * Build reusable components
-   * Manage component states and props
-   * Pass data from parent to child components
-   * Structure a React project
+This project is an exercise in using **React** components, state, and props.
 
 ### Main Features:
 
    * Display a list of courses with the number of parts and exercises for each.
    * Calculate and display the total number of exercises for all courses.
+
+### Key Concepts:
+
+   * Build reusable components
+   * Manage component states and props
+   * Pass data from parent to child components
+   * Structure a React project
 
 ## Prerequisites
 
