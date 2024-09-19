@@ -17,7 +17,7 @@ The Countries App demonstrates how to fetch data from external APIs and use Reac
 
    * Country name
    * Capital city
-   * Population
+   * Area of the country 
    * Spoken languages
    * Current weather in the capital
 
