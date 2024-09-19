@@ -56,7 +56,6 @@ Ensure that you have these installed before proceeding.
 1. To run the application locally:
 
       Start the development server:
-   
       ```bash
       npm start dev
       ```
