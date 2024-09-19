@@ -56,14 +56,13 @@ Ensure that you have these installed before proceeding.
 1. To run the application locally:
 
       Start the development server:
-   
       ```bash
       npm start dev
       ```
 
 2. Open your browser and navigate to http://localhost:3000 or replace 3000 with your port to view the app.
 
-3. To check all available **srcipts** check the **package.json** file. 
+3. To check all available **scripts,** check the **package.json** file. 
 
 ## License
 
