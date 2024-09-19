@@ -4,27 +4,34 @@ The Countries project is part of the Full Stack Open 2023 course, specifically f
 
 ## Table of Contents
 
-   1. [Overview](#overview)
+   1. [About the Project](#about-the-project)
    2. [Prerequisites](#prerequisites)
    3. [Installation](#installation)
    4. [Usage](#usage)
-   5. [Key Concepts](#key-concepts)
+   5. [API Usage](#api-usage)
    6. [License](#license)
 
-## Overview
+## About the Project
 
-The **countries** project is a React application designed to fetch and display information about countries based on user search input.
+The Countries App demonstrates how to fetch data from external APIs and use React to render the data dynamically. The user can search for a country and view details such as:
 
-The key objectives of this project are:
+   * Country name
+   * Capital city
+   * Population
+   * Spoken languages
+   * Current weather in the capital
 
-  * Searching for countries by name.
-  * Displaying detailed information about selected countries.
-  * Handling asynchronous data fetching from a REST API.
+The application integrates with the REST Countries API and OpenWeatherMap API to retrieve country and weather information.
+
+### Main Features:
+
+   * Search for countries by name.
+   * Display detailed information about selected countries.
+   * Fetch and display real-time weather data for the capital city of the selected country.
 
 ## Prerequisites
 
    * Node.js (version 14 or higher)
-   * npm or yarn package manager
 
 Ensure that you have these installed before proceeding.
 
@@ -42,42 +49,42 @@ Ensure that you have these installed before proceeding.
 
    3. Install dependencies:
 
-   If you are using npm:
-   ```bash
-   npm install # or 'npm i'
-   ```
+      If you are using npm:
+      ```bash
+      npm install # or 'npm i'
+      ```
 
-   Or, if you are using yarn:
-   ```bash
-   yarn install
-   ```
+   4. IMPORTANT: You will need an API key from OpenWeatherMap for the weather information feature.
+
+      After obtaining the API key, create a .env file in the project root and add the following:
+   
+      ```bash
+      VITE_WEATHER_API_KEY=<Your_OpenWeatherMap_API_Key>
+      ```
 
 ## Usage
 
 1. To run the application locally:
 
-    Start the development server:
-
-    ```bash
-   npm start dev
-   ```
-
-   Or if using yarn:
-   ```bash
-    yarn start dev
-   ```
+      Start the development server:
+   
+      ```bash
+      npm start dev
+      ```
 
 2. Open your browser and navigate to http://localhost:3000 or replace 3000 with your port to view the app.
 
-## Key Concepts
+## API Usage
 
-  * **Asynchronous Data Fetching:** The app fetches data from a REST API to display information about countries. This involves handling promises and managing async operations in React.
+This project makes use of two public APIs:
 
-  * **State Management:** Utilizes React's useState and useEffect hooks to manage and update the application state based on user input and API responses.
-
-  * **Conditional Rendering:** Displays different UI elements based on the current state, such as showing a list of countries or detailed information about a selected country.
-
-  * **Event Handling:** Handles user interactions, such as searching for a country and selecting a specific country to view more details.
+   1. REST Countries API: Provides detailed information about countries.
+         
+         * Documentation: https://restcountries.com/
+   
+   2. OpenWeatherMap API: Provides weather data for the capital cities.
+        
+        * Documentation: https://openweathermap.org/api
 
 ## License
 
