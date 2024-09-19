@@ -28,7 +28,7 @@ This project is an exercise in using **React** components, state, and props.
 
 ## Prerequisites
 
-   * Node.js (version 14 or higher)
+   * Node.js (version 18 or higher)
 
 Ensure that you have these installed before proceeding.
 
