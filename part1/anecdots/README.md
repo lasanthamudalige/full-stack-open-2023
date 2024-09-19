@@ -1,6 +1,6 @@
-# Courseinfo2 (Part 2 - Full Stack Open 2023)
+# Anecdotes App (Part 1 - Full Stack Open 2023)
 
-This project is a part of the **Full Stack Open 2023** course and is the continuation of the "Courseinfo" project from Part 1. The application is built using **React** and is used to display information about courses, including the course name, number of exercises, and the total number of exercises.
+This project is part of the **Full Stack Open 2023** course, specifically from Part 1. It focuses on building an interactive React application where users can vote for their favorite anecdotes. The project highlights essential concepts such as component state, event handling, and passing data between components.
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@ This project is a part of the **Full Stack Open 2023** course and is the continu
 
 ## About the Project
 
-The Anecdotes App is a simple React app that allows users to view random anecdotes and vote for their favorites. It demonstrates key concepts in React such as:
+The **Anecdotes App** is a simple React app that allows users to view random anecdotes and vote for their favorites. It demonstrates key concepts in React such as:
 
    * Handling component state with useState
    * Event handling in React
