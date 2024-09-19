@@ -42,10 +42,10 @@ Ensure that you have these installed before proceeding.
 
    3. Install dependencies:
 
-   If you are using npm:
-   ```bash
-   npm install # or 'npm i'
-   ```
+      If you are using npm:
+      ```bash
+      npm install # or 'npm i'
+      ```
 
 ## Usage
 
