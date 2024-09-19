@@ -12,17 +12,19 @@ This project is part of the **Full Stack Open 2023** course, specifically from P
 
 ## About the Project
 
-The **Unicafe App** allows users to provide feedback as "Good", "Neutral", or "Bad", and displays the statistics of the feedback including the total number of votes, the average score, and the percentage of positive feedback. It demonstrates key concepts in React such as:
-
-   * Handling component state using React’s useState hook.
-   * Managing dynamic data updates and rendering based on state changes.
-   * Conditional rendering based on user interactions.
-
+The **Unicafe App** allows users to provide feedback as "Good", "Neutral", or "Bad", and displays the statistics of the feedback including the total number of votes, the average score, and the percentage of positive feedback.
+   
 ### Main Features:
 
    * Collect feedback from users in three categories: Good, Neutral, Bad.
    * Display the total number of feedback entries.
    * Calculate and display statistics like average feedback and percentage of positive feedback.
+
+### Key Concepts:
+
+   * Handling component state using React’s useState hook.
+   * Managing dynamic data updates and rendering based on state changes.
+   * Conditional rendering based on user interactions.
 
 ## Prerequisites
 
